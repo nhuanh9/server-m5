@@ -70,7 +70,7 @@ app.put("/players/:id", (req, res, next) => {
     const index = findBookIndex(id);
     if (index !== -1) {
         const player = players[index];
-        player.name = req.body.title;
+        player.name = req.body.name;
         player.champ = req.body.champ;
         player.kda = req.body.kda;
         player.des = req.body.des;
